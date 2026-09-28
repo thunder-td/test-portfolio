@@ -1,533 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Arpit Srivastava | Gen AI & Python Developer</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        mono: ['"Fira Code"', 'monospace'],
-                    },
-                    colors: {
-                        darkBg: '#030712',
-                        darkCard: '#111827',
-                        accentCyan: '#06b6d4',
-                        accentPurple: '#8b5cf6',
-                        accentPink: '#ec4899',
-                    },
-                    animation: {
-                        'blob': 'blob 10s infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-delayed': 'float 6s ease-in-out infinite 3s',
-                        'spin-slow': 'spin 20s linear infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        blob: {
-                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                            '33%': { transform: 'translate(40px, -60px) scale(1.15)' },
-                            '66%': { transform: 'translate(-30px, 30px) scale(0.85)' },
-                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-15px)' },
-                        },
-                        glow: {
-                            '0%': { 'box-shadow': '0 0 5px rgba(6, 182, 212, 0.2), 0 0 10px rgba(6, 182, 212, 0.2)' },
-                            '100%': { 'box-shadow': '0 0 20px rgba(6, 182, 212, 0.6), 0 0 30px rgba(139, 92, 246, 0.6)' },
-                        }
-                    }
-                }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expert AI Software Engineer &amp; Full Stack Developer | Arpit</title>
+<meta content="Hire Arpit Srivastava, a senior software engineer and AI engineer specializing in Python, machine learning, and scalable full-stack AI applications." name="description"/>
+<link href="https://arpit-test-portfolio.vercel.app" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Expert AI Software Engineer &amp; Full Stack Developer | Arpit" property="og:title"/>
+<meta content="Hire Arpit Srivastava, a senior software engineer and AI engineer specializing in Python, machine learning, and scalable full-stack AI applications." property="og:description"/>
+<meta content="https://arpit-test-portfolio.vercel.app" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Expert AI Software Engineer &amp; Full Stack Developer | Arpit" name="twitter:title"/>
+<meta content="Hire Arpit Srivastava, a senior software engineer and AI engineer specializing in Python, machine learning, and scalable full-stack AI applications." name="twitter:description"/>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Arpit.dev",
+          "url": "https://arpit-test-portfolio.vercel.app"
+        },
+        {
+          "@type": "Person",
+          "name": "Arpit Srivastava",
+          "jobTitle": "AI Software Engineer",
+          "description": "Senior Software Engineer and AI Full Stack Developer specializing in Python and Machine Learning."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What services does Arpit offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arpit specializes in AI engineering, full-stack development, Python programming, and machine learning solutions."
+              }
             }
+          ]
         }
+      ]
+    }
     </script>
-    <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #030712;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1f2937;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #374151;
-        }
-
-        /* Glassmorphism utility */
-        .glass {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* Text gradient */
-        .text-gradient {
-            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Reveal on scroll base */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #374151; }
+        .glass { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-gradient { background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
-</head>
+<script async="True" src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MEASUREMENT_ID');</script></head>
 <body class="bg-darkBg text-gray-100 font-sans overflow-x-hidden selection:bg-accentCyan selection:text-darkBg">
-
-    <!-- Canvas Background for Interactive Particles -->
-    <canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
-
-    <!-- Ambient Background Blobs -->
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-        <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-accentCyan/10 blur-[120px] animate-blob"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-accentPurple/10 blur-[120px] animate-blob [animation-delay:4s]"></div>
-        <div class="absolute top-[40%] left-[30%] w-[30vw] h-[30vw] rounded-full bg-accentPink/5 blur-[100px] animate-blob [animation-delay:2s]"></div>
-    </div>
-
-    <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center space-x-2 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentCyan to-accentPurple flex items-center justify-center shadow-lg shadow-accentCyan/20 group-hover:scale-110 transition-transform duration-300">
-                    <span class="font-mono font-bold text-white text-lg">&lt;/&gt;</span>
-                </div>
-                <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-accentCyan transition-colors duration-300">Arpit.dev</span>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center space-x-1 glass px-6 py-2 rounded-full">
-                <a href="index.html#home" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300">Home</a>
-                <a href="about.html" class="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-white/10 transition-all duration-300">About</a>
-                <a href="skills.html" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300">Skills</a>
-                <a href="index.html#projects" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300">Projects</a>
-                <a href="index.html#experience" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300">Experience</a>
-                <a href="contact.html" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300">Contact</a>
-            </nav>
-
-            <!-- CTA Button -->
-            <div class="hidden md:block">
-                <a href="contact.html" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-full group bg-gradient-to-br from-accentCyan to-accentPurple group-hover:from-accentCyan group-hover:to-accentPurple hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">
-                    <span class="relative px-5 py-2 transition-all ease-in duration-75 bg-darkBg rounded-full group-hover:bg-opacity-0">
+<canvas class="fixed inset-0 pointer-events-none z-0 opacity-40" id="particle-canvas"></canvas>
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<a class="flex items-center space-x-2 group" href="index.html">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentCyan to-accentPurple flex items-center justify-center shadow-lg shadow-accentCyan/20 group-hover:scale-110 transition-transform duration-300">
+<span class="font-mono font-bold text-white text-lg">&lt;/&gt;</span>
+</div>
+<span class="font-bold text-xl tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:text-accentCyan transition-colors duration-300">Arpit.dev</span>
+</a>
+<nav class="hidden md:flex items-center space-x-1 glass px-6 py-2 rounded-full">
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300" href="index.html#home">Home</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-white/10 transition-all duration-300" href="about.html">About</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300" href="skills.html">Skills</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300" href="index.html#projects">Projects</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300" href="index.html#experience">Experience</a>
+<a class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300" href="contact.html">Contact</a>
+</nav>
+<div class="hidden md:block">
+<a class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-full group bg-gradient-to-br from-accentCyan to-accentPurple group-hover:from-accentCyan group-hover:to-accentPurple hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-800" href="contact.html">
+<span class="relative px-5 py-2 transition-all ease-in duration-75 bg-darkBg rounded-full group-hover:bg-opacity-0">
                         Hire Me
                     </span>
-                </a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full glass border-t border-white/5 py-6 px-6 flex flex-col space-y-4 shadow-2xl">
-            <a href="index.html#home" class="mobile-link text-lg font-medium text-gray-300 hover:text-accentCyan transition-colors">Home</a>
-            <a href="about.html" class="mobile-link text-lg font-medium text-white transition-colors">About</a>
-            <a href="skills.html" class="mobile-link text-lg font-medium text-gray-300 hover:text-accentCyan transition-colors">Skills</a>
-            <a href="index.html#projects" class="mobile-link text-lg font-medium text-gray-300 hover:text-accentCyan transition-colors">Projects</a>
-            <a href="index.html#experience" class="mobile-link text-lg font-medium text-gray-300 hover:text-accentCyan transition-colors">Experience</a>
-            <a href="contact.html" class="mobile-link text-lg font-medium text-gray-300 hover:text-accentCyan transition-colors">Contact</a>
-            <a href="contact.html" class="mobile-link w-full py-3 text-center rounded-xl bg-gradient-to-r from-accentCyan to-accentPurple text-white font-semibold shadow-lg shadow-accentCyan/20">Hire Me</a>
-        </div>
-    </header>
-
-    <!-- About Hero Section -->
-    <section class="relative min-h-[60vh] flex items-center justify-center pt-32 pb-16 overflow-hidden z-10">
-        <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
-            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full glass border border-accentPurple/30 text-accentPurple text-xs font-semibold tracking-wider uppercase">
-                <span>Get to Know Me</span>
-            </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+</a>
+</div>
+<button class="md:hidden text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-2xl"></i>
+</button>
+</div>
+</header>
+<section class="relative min-h-[60vh] flex items-center justify-center pt-32 pb-16 overflow-hidden z-10">
+<div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
                 About <span class="text-gradient">Arpit Srivastava</span>
-            </h1>
-            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Gen AI Developer, Python Expert, and AI Enthusiast based in San Francisco, California.
+</h1>
+<p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Senior AI Software Engineer and Full Stack Developer specializing in Python and Machine Learning.
             </p>
-            <div class="w-24 h-1 bg-gradient-to-r from-accentCyan via-accentPurple to-accentPink mx-auto rounded-full"></div>
-        </div>
-    </section>
-
-    <!-- Detailed Biography Section -->
-    <section class="relative py-16 z-10">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-12 items-start">
-                <!-- Left: Profile Card & Quick Facts -->
-                <div class="md:col-span-5 space-y-8">
-                    <div class="glass p-8 rounded-3xl border border-white/5 relative group">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-accentCyan to-accentPurple rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-                        <div class="relative flex flex-col items-center text-center space-y-4">
-                            <div class="w-40 h-40 rounded-2xl overflow-hidden glass border border-white/10 flex items-center justify-center bg-gradient-to-tr from-accentCyan/10 to-accentPurple/10">
-                                <svg class="w-24 h-24 text-accentCyan/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
-                                    <path d="M12 10V4" />
-                                    <path d="m12 4-3 3" />
-                                    <path d="m12 4 3 3" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h2 class="text-2xl font-bold text-white">Arpit Srivastava</h2>
-                                <p class="text-sm text-accentCyan font-medium">Gen AI & Python Developer</p>
-                            </div>
-                            <p class="text-sm text-gray-400 leading-relaxed">
-                                "I believe that great software is the perfect intersection of robust engineering and intelligent automation."
-                            </p>
-                            <div class="flex space-x-4 pt-2">
-                                <a href="#" class="text-gray-400 hover:text-accentCyan text-xl transition-colors"><i class="fa-brands fa-github"></i></a>
-                                <a href="#" class="text-gray-400 hover:text-accentCyan text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="#" class="text-gray-400 hover:text-accentCyan text-xl transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quick Facts -->
-                    <div class="glass p-8 rounded-3xl border border-white/5 space-y-6">
-                        <h3 class="text-lg font-bold text-white border-b border-white/5 pb-3">Quick Facts</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Location:</span>
-                                <span class="text-white font-medium">San Francisco, CA</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Experience:</span>
-                                <span class="text-white font-medium">3 Years</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Specialty:</span>
-                                <span class="text-white font-medium">Gen AI, Python</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Education:</span>
-                                <span class="text-white font-medium">B.S. Computer Science</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Freelance:</span>
-                                <span class="text-accentCyan font-semibold">Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Detailed Story & Philosophy -->
-                <div class="md:col-span-7 space-y-8">
-                    <div class="glass p-8 rounded-3xl border border-white/5 space-y-6">
-                        <h3 class="text-2xl font-bold text-white">My Story</h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            My journey into software development started back in college when I built a simple data analysis tool for a local research project. Seeing how code could instantly transform raw data into actionable insights that helped real people was a revelation. I was hooked.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Since then, I have dedicated myself to mastering the Python ecosystem and artificial intelligence. I spent years refining my skills in backend development, machine learning, and eventually, generative AI. Over the last 3 years, I've worked with startups and established tech companies to build scalable AI applications, intelligent agents, and high-performance backend systems.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Today, as a Gen AI & Python Developer, I focus on AI architecture, system optimization, and mentoring junior developers. I love diving deep into LLM internals, exploring advanced RAG strategies, and crafting intelligent workflows that make applications feel alive.
-                        </p>
-                    </div>
-
-                    <div class="glass p-8 rounded-3xl border border-white/5 space-y-6">
-                        <h3 class="text-2xl font-bold text-white">My Professional Philosophy</h3>
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div class="space-y-2">
-                                <div class="flex items-center space-x-2 text-accentCyan">
-                                    <i class="fa-solid fa-code text-lg"></i>
-                                    <h4 class="font-bold text-white">Clean & Maintainable</h4>
-                                </div>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    Code is read far more often than it is written. I prioritize clear naming, modular architecture, and thorough documentation.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <div class="flex items-center space-x-2 text-accentPurple">
-                                    <i class="fa-solid fa-gauge-high text-lg"></i>
-                                    <h4 class="font-bold text-white">Performance First</h4>
-                                </div>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    A slow system is a broken system. I optimize API latency, leverage modern caching, and ensure efficient model inference.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <div class="flex items-center space-x-2 text-accentPink">
-                                    <i class="fa-solid fa-brain text-lg"></i>
-                                    <h4 class="font-bold text-white">AI-Centric Innovation</h4>
-                                </div>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    Technology should empower the user. I collaborate closely with product teams to ensure ethical AI usage and intuitive agentic workflows.
-                                </p>
-                            </div>
-                            <div class="space-y-2">
-                                <div class="flex items-center space-x-2 text-accentCyan">
-                                    <i class="fa-solid fa-users text-lg"></i>
-                                    <h4 class="font-bold text-white">Collaborative Spirit</h4>
-                                </div>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    Great products are built by great teams. I value open communication, constructive code reviews, and knowledge sharing.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hobbies & Interests Section -->
-    <section class="relative py-16 z-10 reveal">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold tracking-widest text-accentPink uppercase mb-2">Beyond Coding</h2>
-                <p class="text-3xl font-extrabold text-white">Hobbies & Interests</p>
-                <div class="w-20 h-1 bg-gradient-to-r from-accentPink to-accentCyan mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass p-6 rounded-2xl border border-white/5 hover:border-accentCyan/30 transition-all duration-300 text-center space-y-3">
-                    <div class="w-12 h-12 rounded-full bg-accentCyan/10 flex items-center justify-center text-accentCyan text-xl mx-auto">
-                        <i class="fa-solid fa-mug-hot"></i>
-                    </div>
-                    <h3 class="font-bold text-white">Specialty Coffee</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        An avid home barista. I love experimenting with different brewing methods, from V60 pour-overs to dialing in the perfect espresso shot.
-                    </p>
-                </div>
-
-                <div class="glass p-6 rounded-2xl border border-white/5 hover:border-accentPurple/30 transition-all duration-300 text-center space-y-3">
-                    <div class="w-12 h-12 rounded-full bg-accentPurple/10 flex items-center justify-center text-accentPurple text-xl mx-auto">
-                        <i class="fa-solid fa-camera"></i>
-                    </div>
-                    <h3 class="font-bold text-white">Street Photography</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Capturing the beauty of everyday life. I enjoy walking around cities with my mirrorless camera, capturing candid moments and architecture.
-                    </p>
-                </div>
-
-                <div class="glass p-6 rounded-2xl border border-white/5 hover:border-accentPink/30 transition-all duration-300 text-center space-y-3">
-                    <div class="w-12 h-12 rounded-full bg-accentPink/10 flex items-center justify-center text-accentPink text-xl mx-auto">
-                        <i class="fa-solid fa-mountain"></i>
-                    </div>
-                    <h3 class="font-bold text-white">Hiking & Outdoors</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Recharging in nature. Whenever I need a break from screens, you can find me exploring hiking trails around Northern California.
-                    </p>
-                </div>
-
-                <div class="glass p-6 rounded-2xl border border-white/5 hover:border-accentCyan/30 transition-all duration-300 text-center space-y-3">
-                    <div class="w-12 h-12 rounded-full bg-accentCyan/10 flex items-center justify-center text-accentCyan text-xl mx-auto">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <h3 class="font-bold text-white">Open Source</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Giving back to the community. I contribute to open-source Python libraries and build small AI tools in my spare time.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="relative py-16 z-10 reveal">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="glass p-12 rounded-3xl border border-white/5 text-center space-y-6 relative overflow-hidden">
-                <div class="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-accentCyan/10 blur-3xl"></div>
-                <div class="absolute -bottom-24 -right-24 w-48 h-48 rounded-full bg-accentPurple/10 blur-3xl"></div>
-                
-                <h2 class="text-3xl font-extrabold text-white">Let's Build Something Amazing Together</h2>
-                <p class="text-gray-300 max-w-xl mx-auto leading-relaxed">
-                    Whether you have a project in mind, want to discuss AI architecture, or just want to chat about Python, I'd love to hear from you.
-                </p>
-                <div class="pt-4">
-                    <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gradient-to-r from-accentCyan to-accentPurple text-white font-semibold shadow-lg shadow-accentCyan/20 hover:shadow-accentCyan/40 hover:scale-105 transition-all duration-300">
-                        Get In Touch <i class="fa-solid fa-paper-plane ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="relative bg-darkBg border-t border-white/5 py-12 z-10">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-accentCyan to-accentPurple flex items-center justify-center">
-                    <span class="font-mono font-bold text-white text-sm">&lt;/&gt;</span>
-                </div>
-                <span class="font-bold text-lg tracking-tight text-white">Arpit.dev</span>
-            </div>
-            <p class="text-sm text-gray-500">&copy; 2023 Arpit Srivastava. All rights reserved.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-500 hover:text-accentCyan transition-colors"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="text-gray-500 hover:text-accentCyan transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="text-gray-500 hover:text-accentCyan transition-colors"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 rounded-full glass border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-accentCyan/50 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none z-50">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript for Animations & Interactivity -->
-    <script>
-        // 1. Particle Canvas Background
-        const canvas = document.getElementById('particle-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        const maxParticles = 60;
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.radius = Math.random() * 2 + 1;
-                this.color = Math.random() > 0.5 ? '#06b6d4' : '#8b5cf6';
-            }
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-            }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-        }
-
-        for (let i = 0; i < maxParticles; i++) {
-            particles.push(new Particle());
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            // Draw connections
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-
-                    if (dist < 120) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.07 * (1 - dist / 120)})`;
-                        ctx.lineWidth = 0.5;
-                        ctx.stroke();
-                    }
-                }
-            }
-
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-
-            requestAnimationFrame(animateParticles);
-        }
-        animateParticles();
-
-        // 2. Sticky Navbar & Back to Top Button
-        const navbar = document.getElementById('navbar');
-        const backToTop = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('glass', 'shadow-lg', 'py-3');
-                navbar.classList.remove('py-4');
-            } else {
-                navbar.classList.remove('glass', 'shadow-lg', 'py-3');
-                navbar.classList.add('py-4');
-            }
-
-            if (window.scrollY > 300) {
-                backToTop.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
-                backToTop.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                backToTop.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
-                backToTop.classList.remove('opacity-100', 'translate-y-0');
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // 3. Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-xmark');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                const icon = mobileMenuBtn.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-xmark');
-            });
-        });
-
-        // 4. Scroll Reveal Animation
-        const reveals = document.querySelectorAll('.reveal');
-        const revealOnScroll = () => {
-            reveals.forEach(reveal => {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveal.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveal.classList.add('active');
-                }
-            });
-        };
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Run once on load
-    </script>
+</div>
+</section>
+<footer class="relative bg-darkBg border-t border-white/5 py-12 z-10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-gray-500">© 2023 Arpit Srivastava. All rights reserved. | <a class="hover:text-white" href="/privacy">Privacy Policy</a> | <a class="hover:text-white" href="/terms">Terms of Service</a></p>
+</div>
+</footer>
 </body>
 </html>
